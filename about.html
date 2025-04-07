@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Skechers India</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">About Skechers India</h1>
+        <p class="mb-6">
+            At Skechers, we are committed to providing the best footwear for every occasion. Our mission is to create innovative, stylish, and comfortable shoes that cater to the needs of our customers. 
+            With a wide range of products, we aim to inspire and empower individuals to lead active and healthy lifestyles.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+        <p class="mb-6">
+            Founded in 1992, Skechers has grown to become one of the world's leading footwear brands. Our dedication to quality and performance has made us a favorite among athletes, casual wearers, and fashion enthusiasts alike.
+            We believe in the power of footwear to enhance lives, and we strive to deliver products that reflect our commitment to excellence.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">Our Values</h2>
+        <ul class="list-disc pl-5 mb-6">
+            <li>Innovation: We continuously seek to improve our products and processes.</li>
+            <li>Quality: We prioritize high-quality materials and craftsmanship.</li>
+            <li>Customer Satisfaction: Our customers are at the heart of everything we do.</li>
+            <li>Sustainability: We are committed to reducing our environmental impact.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold mb-4">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="border rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Team Member" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">John Doe</h3>
+                    <p class="text-gray-600">CEO</p>
+                </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/1234568/pexels-photo-1234568.jpeg" alt="Team Member" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Jane Smith</h3>
+                    <p class="text-gray-600">Head of Marketing</p>
+                </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/1234569/pexels-photo-1234569.jpeg" alt="Team Member" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold">Emily Johnson</h3>
+                    <p class="text-gray-600">Product Manager</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
