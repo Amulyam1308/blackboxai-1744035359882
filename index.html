@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skechers India - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero Carousel -->
+        <section class="relative">
+            <div class="h-96 bg-gray-200 flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28" alt="Hero Banner" class="w-full h-full object-cover">
+                <div class="absolute bottom-8 left-8 right-8 flex justify-between">
+                    <button class="bg-black bg-opacity-50 text-white p-2 rounded-full">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="bg-black bg-opacity-50 text-white p-2 rounded-full">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Navigation -->
+        <section class="bg-white py-4 shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex overflow-x-auto space-x-8 py-2">
+                    <a href="#" class="flex flex-col items-center min-w-max">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-male text-2xl"></i>
+                        </div>
+                        <span class="mt-2 text-sm">Men</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center min-w-max">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-female text-2xl"></i>
+                        </div>
+                        <span class="mt-2 text-sm">Women</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center min-w-max">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-child text-2xl"></i>
+                        </div>
+                        <span class="mt-2 text-sm">Kids</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center min-w-max">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-running text-2xl"></i>
+                        </div>
+                        <span class="mt-2 text-sm">Sports</span>
+                    </a>
+                    <a href="#" class="flex flex-col items-center min-w-max">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-tshirt text-2xl"></i>
+                        </div>
+                        <span class="mt-2 text-sm">Apparel</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="py-8 container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Featured Collections</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative h-64 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Collection" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">New Arrivals</h3>
+                    </div>
+                </div>
+                <div class="relative h-64 rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Collection" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">Best Sellers</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Products -->
+        <section class="py-8 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6">Trending Now</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28" alt="Product" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">SALE</div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-medium">Go Walk 5</h3>
+                            <div class="flex items-center mt-1">
+                                <div class="text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <span class="text-red-500 font-bold">₹3,999</span>
+                                <span class="text-gray-500 line-through text-sm ml-2">₹4,999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for 3 more products -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="py-8">
+            <div class="container mx-auto px-4">
+                <div class="bg-gray-900 text-white rounded-lg p-8 text-center">
+                    <h2 class="text-3xl font-bold mb-4">UP TO 50% OFF</h2>
+                    <p class="mb-6">On selected styles. Limited time only.</p>
+                    <a href="shop.html" class="bg-white text-gray-900 px-6 py-3 rounded-full font-medium inline-block">Shop Sale</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
